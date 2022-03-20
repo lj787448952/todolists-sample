@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "361a54fe-9494-429b-9bbc-d00165c4c659",
+		"name": "todolist-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有項目",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://morning-brushlands-14165.herokuapp.com/favicon.ico/todos",
+					"protocol": "https",
+					"host": [
+						"morning-brushlands-14165",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"favicon.ico",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新清單項目",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://morning-brushlands-14165.herokuapp.com/favicon.ico/todos",
+					"protocol": "https",
+					"host": [
+						"morning-brushlands-14165",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"favicon.ico",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部項目",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://morning-brushlands-14165.herokuapp.com/favicon.ico/todos",
+					"protocol": "https",
+					"host": [
+						"morning-brushlands-14165",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"favicon.ico",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單一項目",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://morning-brushlands-14165.herokuapp.com/favicon.ico/todos",
+					"protocol": "https",
+					"host": [
+						"morning-brushlands-14165",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"favicon.ico",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯待理代辦事項",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"revise content\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://morning-brushlands-14165.herokuapp.com/favicon.ico/todos/854a6542-6eec-4706-906c-802043a141d0",
+					"protocol": "https",
+					"host": [
+						"morning-brushlands-14165",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"favicon.ico",
+						"todos",
+						"854a6542-6eec-4706-906c-802043a141d0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
